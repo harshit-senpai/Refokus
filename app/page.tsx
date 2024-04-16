@@ -1,11 +1,10 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Work from "@/components/Work";
 import Cards from "@/components/card/Cards";
 import Marquees from "@/components/marquee/Marquees";
 import Products from "@/components/products/Products";
 import Strips from "@/components/strips/Strips";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,6 +15,7 @@ export default function Home() {
       <Products />
       <Marquees />
       <Cards />
+      <Footer />
     </div>
   );
 }
