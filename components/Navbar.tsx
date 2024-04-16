@@ -22,7 +22,10 @@ const Navbar = () => {
             >
               {index === 1 && (
                 <span
-                  style={{ boxShadow: "0 0 0.5em #00FF19" }}
+                  style={{
+                    boxShadow: "0 0 0.5em #00FF19",
+                    backgroundImage: "linear-gradient(90deg, #abffb3, #fff);",
+                  }}
                   className="bg-[#00FF19] inline-block w-1.5 h-1.5 rounded-full"
                 ></span>
               )}
