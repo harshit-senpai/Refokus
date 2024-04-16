@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Work from "@/components/Work";
+import Cards from "@/components/card/Cards";
 import Marquees from "@/components/marquee/Marquees";
 import Products from "@/components/products/Products";
 import Strips from "@/components/strips/Strips";
@@ -14,6 +15,7 @@ export default function Home() {
       <Strips />
       <Products />
       <Marquees />
+      <Cards />
     </div>
   );
 }
