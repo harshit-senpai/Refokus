@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { links } from "..";
+import { links } from "../constants";
 import Button from "./Button";
 
 const Navbar = () => {
