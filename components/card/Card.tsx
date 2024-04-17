@@ -1,5 +1,6 @@
+"use client";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import { motion } from "framer-motion";
 interface CardProps {
   width: string;
   start: boolean;
@@ -9,8 +10,9 @@ interface CardProps {
 
 const Card = ({ width, start, para, hover }: CardProps) => {
   return (
-    <div
-      className={`${width} bg-zinc-800 p-5 rounded-xl min-h-60 lg:min-h-96 flex flex-col justify-between hover:${hover}`}
+    <motion.div
+      whileHover={{ backgroundColor: hover && "#7443ff", padding: "25px" }}
+      className={`${width}  bg-zinc-800 p-5 rounded-xl min-h-60 lg:min-h-96 flex flex-col justify-between`}
     >
       <div className="w-full">
         <div className="w-full flex items-center justify-between">
@@ -36,7 +38,7 @@ const Card = ({ width, start, para, hover }: CardProps) => {
           </p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
