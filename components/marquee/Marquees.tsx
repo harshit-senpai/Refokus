@@ -5,7 +5,7 @@ const Marquees = () => {
   return (
     <div className="mt-[15rem]">
       {marqueeImage.map((marquee, index) => (
-        <Marquee key={index} imgUrls={marquee} />
+        <Marquee key={index} imgUrls={marquee} direction={index === 0? 'left' : 'right'} />
       ))}
     </div>
   );

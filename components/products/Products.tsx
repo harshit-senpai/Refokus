@@ -13,7 +13,7 @@ const Products = () => {
   };
 
   return (
-    <div className="mt-20 relative">
+    <div className="mt-20 hidden lg:block relative">
       {products.map((product, index) => (
         <Product
           title={product.title}
@@ -51,7 +51,7 @@ const Products = () => {
             className="w-full h-full rounded-lg bg-sky-200"
           >
             <Image
-              src="https://assets-global.website-files.com/6334198f239547f2fccd84c1/65b41324914b470b20ec7d03_Frame%203.png "
+              src="https://assets-global.website-files.com/6334198f239547f2fccd84c1/65b41324914b470b20ec7d03_Frame%203.png"
               height={4200}
               width={4200}
               className="h-full w-full"
