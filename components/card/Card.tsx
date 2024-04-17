@@ -10,7 +10,7 @@ interface CardProps {
 const Card = ({ width, start, para, hover }: CardProps) => {
   return (
     <div
-      className={`${width} bg-zinc-800 p-5 rounded-xl min-h-96 flex flex-col justify-between hover:${hover}`}
+      className={`${width} bg-zinc-800 p-5 rounded-xl min-h-60 lg:min-h-96 flex flex-col justify-between hover:${hover}`}
     >
       <div className="w-full">
         <div className="w-full flex items-center justify-between">
@@ -22,7 +22,7 @@ const Card = ({ width, start, para, hover }: CardProps) => {
       <div className="w-full">
         {start && (
           <>
-            <h1 className="text-6xl font-semibold tracking-tight leading none">
+            <h1 className="text-6xl mt-6 lg:mt-0 font-semibold tracking-tight leading none">
               Start a project
             </h1>
             <button className="mt-5 px-5 py-3 border-[1px] border-zinc-300 rounded-full">

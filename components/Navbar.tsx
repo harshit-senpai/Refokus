@@ -13,7 +13,7 @@ const Navbar = () => {
           width={80}
           height={80}
         />
-        <div className="flex gap-16 ml-28">
+        <div className="hidden lg:flex gap-16 ml-28">
           {links.map((link, index) => (
             <Link
               href={link.href}

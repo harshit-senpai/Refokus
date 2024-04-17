@@ -2,7 +2,7 @@ import { FooterLinks } from "@/constants";
 
 const Footer = () => {
   return (
-    <div className="min-w-full">
+    <div className="hidden lg:block min-w-full">
       <div className="max-w-7xl mx-auto py-10 flex gap-32">
         <div className="basis-1/2">
           <h1 className="text-[10rem] font-semibold leading-none tracking-tight">
