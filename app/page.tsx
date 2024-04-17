@@ -15,8 +15,6 @@ export default function Home() {
     import("locomotive-scroll").then((locomotiveModule) => {
       scroll = new locomotiveModule.default();
     });
-
-    // cleanup phase
     return () => {
       if (scroll) scroll.destroy();
     };
